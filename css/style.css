@@ -172,6 +172,22 @@ span.navbar-brand:hover,
 
 /* Contacto */
 
+.br {
+	display: block;
+}
+
+.top {
+	margin-top: 10px;
+}
+
+.bottom {
+	margin-bottom: 10px;
+}
+
+.tab {
+	padding-left: 20px;
+}
+
 .template {
 	margin: 0 auto;
 	text-align: center;
@@ -379,6 +395,16 @@ span.navbar-brand:hover,
 
 /* Curriculim */
 
+.presentacion {
+	font-size: 18px;
+	text-align: left;	
+	margin-left: 30px;
+}
+
+.presentacion span {
+	margin-bottom: 10px;
+}
+
 .cv-template {
 	font-family: 'bellotaregular';
 	max-width: 1200px;
@@ -466,7 +492,9 @@ span.navbar-brand:hover,
 	text-align: left;
 }
 
-.experiencia ul .no-enlace{
+.experiencia ul .no-enlace,
+.experiencia ul li>a{
+	text-decoration: none;
 	font-size: 18px;
 	font-weight: 600;
 }

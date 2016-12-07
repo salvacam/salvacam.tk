@@ -4,7 +4,7 @@ $trabajos = [
 	[
 		"empresa" => 'Fidesol',		
 		"empleo" => 'Desarrollador Web Front-End.',
-		"descripcion" => "Desarrollador front-end, para reingenieria de proyecto con el framework Backbone.js.",
+		"descripcion" => "Desarrollador front-end para reingenieria de proyecto web, con uso del framework Backbone.js.",
 		"lugar" => "Granada",
 		"fecha" => "Julio 2016 – Actualmente"
 	],
@@ -62,6 +62,12 @@ $formacion = [
 ];
 
 $cursos = [
+		[
+			'nombre'=> 'ECMAScript 6: Avanza tu conocimiento de JS al nivel 6',
+			'url'=> 'https://www.udemy.com/certificate/UC-FDEQQMF5/',
+			'entidad'=> 'Udemy',
+			'fecha'=> 'Diciembre 2016'
+		],
 		[
 			'nombre'=> 'Anatomy of Backbone.js',
 			'url'=> 'https://www.codeschool.com/users/1221030',

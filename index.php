@@ -1,6 +1,6 @@
 <?PHP
 
-if(session_id() != '' && isset($_SESSION)) {    
+if(session_id() != '' && isset($_SESSION)) {
 	session_unset();
 	session_destroy();
 }
@@ -12,6 +12,7 @@ $loader = new Twig_Loader_Filesystem('template');
 $twig = new Twig_Environment($loader, array());
 
 $views = array("porfolio", "contact");
+//$views = array("porfolio");
 $dir_template="index";
 
 if(isset($_GET['page'])) {
@@ -29,20 +30,21 @@ $text = array(
 	'cursos' => $cursos,
 	'trabajos' => $trabajos,
 	'formacion' => $formacion
-); 
+);
 
 if ($dir_template == "porfolio") {
 	$text = array(
 		'titulo' => 'Porfolio',
 		'activo' => 'porfolio',
 		'proyectos' => $proyectos
-	); 
-} else if ($dir_template == "contact") {
+	);
+}
+else if ($dir_template == "contact") {
 	$text = array(
 		'titulo' => 'Contacto',
 		'activo' => 'contacto'
-	); 
-} 
+	);
+}
 
 echo $twig->render($dir_template.".html", $text);
 
